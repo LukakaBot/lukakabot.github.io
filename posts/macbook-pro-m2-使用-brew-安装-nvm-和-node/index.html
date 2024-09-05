@@ -1,0 +1,89 @@
+<!DOCTYPE html><html lang="en"> <head><meta name="viewport" content="width=device-width"><meta name="generator" content="Astro v4.13.1"><title>MacBook Pro M2 安装 nvm</title><meta charset="utf-8"><link rel="canonical" href="https://lukakabot.github.io/blog/posts/macbook-pro-m2-%E4%BD%BF%E7%94%A8-brew-%E5%AE%89%E8%A3%85-nvm-%E5%92%8C-node/"><meta name="robots" content="index, follow"><meta property="og:title" content="MacBook Pro M2 安装 nvm"><meta property="og:type" content="article"><meta property="og:image" content="https://lukakabot.github.io/placeholder.png"><meta property="og:url" content="https://lukakabot.github.io"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta name="twitter:image:src" content="https://lukakabot.github.io/placeholder.png"><meta name="twitter:image:alt" content=""><meta name="twitter:creator" content="@moeyua13"><meta name="twitter:site" content="@moeyua13"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="MacBook Pro M2 安装 nvm"><meta name="twitter:description" content=""><link rel="stylesheet" href="/blog/_astro/about.BzRJ6ha1.css">
+<style>.tk-meta-input{background-color:#fff}.code-container{position:relative}.clipboard-copy{position:absolute;top:.5rem;right:.5rem;width:1.75rem;height:1.75rem;display:flex;justify-content:center;align-items:center;border-radius:.25rem}.clipboard-copy:hover{background-color:#30363d}
+</style><script type="module" src="/blog/_astro/hoisted.GAMxWTaO.js"></script>
+<script type="module" src="/blog/_astro/page.DFwqf4PB.js"></script></head> <body> <div un-max-lg="animate-fadein-down" un-lg="flex flex-row-reverse justify-between gap-4 px-8 mx-auto max-w-6xl" class="container contain-layout m-a"> <div un-lg="sticky top-0 h-screen py-20 animate-fadein-left gap-8" un-lg:flex="~ col justify-between items-start gap-4" class="p-7.5"> <header un-lg="grow-1 justify-between items-start" un-flex="~ col gap-2.5" class="text-center"> <hgroup un-hover:lg="bg-foreground color-background pt-3.75 pb-8.75 " un-lg=" write-vertical-right items-start px-2.5 pb-12 b-l-2px b-l-foreground-solid text-left" un-flex="~ col gap-2.5" class="cursor-pointer transition-[padding,background] duration-800 ease-in-out"> <a class="normal" href="/"> <h3 class="text-5 font-extrabold font-serif">Typography</h3> <h1 class="text-8 font-extrabold font-serif">活版印字</h1> </a> </hgroup> <nav class="text-center font-bold" un-flex="~ col gap-2"> <ul un-lg="flex-col items-start text-4" class="text-3.5" un-flex="~ row gap-2 justify-center"> <li> <a href="/posts/page/1">Posts</a> </li><li> <a href="/archive">Archive</a> </li><li> <a href="/categories">Categories</a> </li><li> <a href="/about">About</a> </li> </ul> <ul un-flex="~ row gap-1 justify-center"> <li> <a href="https://github.com/moeyua/astro-theme-typography" target="_blank" title="github" class="icon i-mdi-github"></a> </li><li> <a href="/atom.xml" target="_blank" title="rss" class="icon i-mdi-rss"></a> </li><li> <a href="https://github.com/moeyua/astro-theme-typography" target="_blank" title="twitter" class="icon i-mdi-twitter"></a> </li><li> <a href="https://github.com/moeyua/astro-theme-typography" target="_blank" title="mastodon" class="icon i-mdi-mastodon"></a> </li> </ul> </nav> </header> <footer font-bold text-3 un-flex="~ col gap-1" un-lg="gap-3.5" class="max-lg:hidden"> <p>
+© 2024 <a target="_blank" href="https://lukakabot.github.io" rel="noopener noreferrer">Typography</a> </p> <p>
+Theme
+<a target="_blank" href="https://github.com/Moeyua/astro-theme-typography" rel="noopener noreferrer">Typography</a>
+by <a target="_blank" href="https://moeyua.com" rel="noopener noreferrer">Moeyua</a> </p> <p>
+Proudly published with
+<a target="_blank" href="https://astro.build" rel="noopener noreferrer">Astro</a> </p> </footer> </div> <main un-lg="py-20 min-w-xl animate-fadein-down" class="p-7.5">  <article class="heti"> <header> <h1 class="post-title!"> <a href="/posts/macbook-pro-m2-使用-brew-安装-nvm-和-node/">MacBook Pro M2 安装 nvm</a> </h1> <div class="mt-2 text-3.5"> <span>Posted at</span> <time>2024-09-05</time> <a class="ml-2.5" href="/categories/环境">
+# 环境 </a> </div> </header>  <p>小编环境：</p>
+<ul>
+<li>2023 MacBook Pro</li>
+<li>macOS 14.0</li>
+<li>终端：iTerm</li>
+</ul>
+<h2 id="安装-nvm">安装 nvm</h2>
+<p>要获取或更新 nvm，手动执行以下命令：</p>
+<pre class="astro-code one-dark-pro" style="background-color:#282c34;color:#abb2bf; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#61AFEF">curl</span><span style="color:#D19A66"> -o-</span><span style="color:#98C379"> https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh</span><span style="color:#ABB2BF"> | </span><span style="color:#61AFEF">bash</span></span>
+<span class="line"></span></code></pre>
+<pre class="astro-code one-dark-pro" style="background-color:#282c34;color:#abb2bf; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#61AFEF">wget</span><span style="color:#D19A66"> -qO-</span><span style="color:#98C379"> https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh</span><span style="color:#ABB2BF"> | </span><span style="color:#61AFEF">bash</span></span>
+<span class="line"></span></code></pre>
+<p>确定 Mac 使用的是 zsh 还是 bash，如果是 bash 则添加到 <code>~/.bash_profile</code>，如果是 zsh 则添加到 <code>~/.zshrc</code>：</p>
+<pre class="astro-code one-dark-pro" style="background-color:#282c34;color:#abb2bf; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#56B6C2">echo</span><span style="color:#E06C75"> $SHELL</span></span>
+<span class="line"><span style="color:#7F848E;font-style:italic"># 输出 /bin/zsh，为 Zsh，添加到 ~/.zshrc</span></span>
+<span class="line"><span style="color:#7F848E;font-style:italic"># 输出 /bin/bash，为 Bash，添加到 ~/.bash_profile</span></span>
+<span class="line"></span></code></pre>
+<p>尝试将一下命令添加到你的配置文件中（<code>~/.bash_profile</code>、<code>~/.zshrc</code>或<code>~/.bashrc</code>）：</p>
+<pre class="astro-code one-dark-pro" style="background-color:#282c34;color:#abb2bf; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#C678DD">export</span><span style="color:#E06C75"> NVM_DIR</span><span style="color:#56B6C2">=</span><span style="color:#98C379">"</span><span style="color:#E06C75">$HOME</span><span style="color:#98C379">/.nvm"</span></span>
+<span class="line"><span style="color:#ABB2BF">[ </span><span style="color:#56B6C2">-s</span><span style="color:#98C379"> "</span><span style="color:#E06C75">$NVM_DIR</span><span style="color:#98C379">/nvm.sh"</span><span style="color:#ABB2BF"> ] &#x26;&#x26; </span><span style="color:#61AFEF">\.</span><span style="color:#98C379"> "</span><span style="color:#E06C75">$NVM_DIR</span><span style="color:#98C379">/nvm.sh"</span><span style="color:#7F848E;font-style:italic">  # This loads nvm</span></span>
+<span class="line"><span style="color:#ABB2BF">[ </span><span style="color:#56B6C2">-s</span><span style="color:#98C379"> "</span><span style="color:#E06C75">$NVM_DIR</span><span style="color:#98C379">/bash_completion"</span><span style="color:#ABB2BF"> ] &#x26;&#x26; </span><span style="color:#61AFEF">\.</span><span style="color:#98C379"> "</span><span style="color:#E06C75">$NVM_DIR</span><span style="color:#98C379">/bash_completion"</span><span style="color:#7F848E;font-style:italic">  # This loads nvm bash_completion</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#C678DD">export</span><span style="color:#E06C75"> NVM_NODEJS_ORG_MIRROR</span><span style="color:#56B6C2">=</span><span style="color:#E06C75">https</span><span style="color:#ABB2BF">://</span><span style="color:#E06C75">npmmirror</span><span style="color:#ABB2BF">.</span><span style="color:#E06C75">com</span><span style="color:#ABB2BF">/</span><span style="color:#E06C75">mirrors</span><span style="color:#ABB2BF">/</span><span style="color:#E06C75">node</span><span style="color:#ABB2BF">/</span></span>
+<span class="line"></span></code></pre>
+<p>重新加载配置：</p>
+<pre class="astro-code one-dark-pro" style="background-color:#282c34;color:#abb2bf; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#56B6C2">source</span><span style="color:#98C379"> ~/.zshrc</span></span>
+<span class="line"><span style="color:#7F848E;font-style:italic"># 或</span></span>
+<span class="line"><span style="color:#56B6C2">source</span><span style="color:#98C379"> ~/.bash_profile</span></span>
+<span class="line"></span></code></pre>
+<p>检查 nvm 是否安装成功：</p>
+<pre class="astro-code one-dark-pro" style="background-color:#282c34;color:#abb2bf; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#61AFEF">nvm</span><span style="color:#D19A66"> --version</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic"># 输出 0.40.1，安装成功🎉</span></span>
+<span class="line"></span></code></pre>
+<h2 id="安装-node">安装 node</h2>
+<pre class="astro-code one-dark-pro" style="background-color:#282c34;color:#abb2bf; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#61AFEF">nvm</span><span style="color:#98C379"> install</span><span style="color:#D19A66"> 22.7.0</span></span>
+<span class="line"></span></code></pre>
+<p>检查 node 是否安装成功：</p>
+<pre class="astro-code one-dark-pro" style="background-color:#282c34;color:#abb2bf; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#61AFEF">node</span><span style="color:#D19A66"> -v</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic"># 输出 v22.7.0，安装成功🎉</span></span>
+<span class="line"></span></code></pre>  </article> <footer class="mt-5">  <p class="flex items-center gap-2">  <span class="inline-flex items-center"> <a href="/posts/create-astro-component">Next post: Tutorial: Create an Astro Component</a> <i class="i-mdi-chevron-double-right icon"></i> </span> </p> </footer> <!-- <footer class="mt-5">
+  <p class="mb-2.5">{t('page_number', page.currentPage)} / {t('page_count', page.lastPage)}</p>
+  <p class="flex items-center gap-2">
+    <span class="inline-flex items-center">
+      <i class="i-mdi-chevron-double-left icon"></i>
+      {page.url.prev ? <a href={page.url.prev}> {t('prev')} </a> : <span>{t('prev')}</span>}
+    </span>
+
+    <span class="inline-flex items-center">
+      {page.url.next ? <a href={page.url.next}>{t('next')}</a> : <span>{t('next')}</span>}
+      <i class="i-mdi-chevron-double-right icon"></i>
+    </span>
+  </p>
+</footer> -->  <div py-16> <div id="disqus_thread"></div> <script>(function(){const shortname = "typography-astro";
+const identifier = "MacBook Pro M2 使用 brew 安装 nvm 和 node.md";
+const url = "https://lukakabot.github.io//posts/macbook-pro-m2-使用-brew-安装-nvm-和-node";
+const title = "MacBook Pro M2 安装 nvm";
+
+  var disqus_config = function () {
+    this.page.url = url
+    this.page.identifier = identifier
+    this.page.title = title
+  }
+
+  (function () {
+    var d = document,
+      s = d.createElement('script')
+    s.src = 'https://' + shortname + '.disqus.com/embed.js'
+    s.setAttribute('data-timestamp', new Date().toString())
+    ;(d.head || d.body).appendChild(s)
+  })()
+})();</script> <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>    </div>  </main> <footer font-bold text-3 un-flex="~ col gap-1" un-lg="gap-3.5" class="lg:hidden p-7.5"> <p>
+© 2024 <a target="_blank" href="https://lukakabot.github.io" rel="noopener noreferrer">Typography</a> </p> <p>
+Theme
+<a target="_blank" href="https://github.com/Moeyua/astro-theme-typography" rel="noopener noreferrer">Typography</a>
+by <a target="_blank" href="https://moeyua.com" rel="noopener noreferrer">Moeyua</a> </p> <p>
+Proudly published with
+<a target="_blank" href="https://astro.build" rel="noopener noreferrer">Astro</a> </p> </footer> </div> </body></html>  

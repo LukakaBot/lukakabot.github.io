@@ -1,4 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>活版印字</title><description>Rediscory the beauty of typography</description><link>https://lukakabot.github.io/</link><item><title>Tutorial: Create an Astro Component</title><link>https://lukakabot.github.io/posts/create-astro-component/</link><guid isPermaLink="true">https://lukakabot.github.io/posts/create-astro-component/</guid><description>Learn how to create your first Astro component.</description><pubDate>Sat, 02 Jul 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;If you know HTML, you already know enough to write your first Astro component.&lt;/strong&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/pretty-feed-v3.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>活版印字</title><description>Rediscory the beauty of typography</description><link>https://lukakabot.github.io/</link><item><title>MacBook Pro M2 安装 nvm</title><link>https://lukakabot.github.io/posts/macbook-pro-m2-%E4%BD%BF%E7%94%A8-brew-%E5%AE%89%E8%A3%85-nvm-%E5%92%8C-node/</link><guid isPermaLink="true">https://lukakabot.github.io/posts/macbook-pro-m2-%E4%BD%BF%E7%94%A8-brew-%E5%AE%89%E8%A3%85-nvm-%E5%92%8C-node/</guid><pubDate>Thu, 05 Sep 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;小编环境：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2023 MacBook Pro&lt;/li&gt;
+&lt;li&gt;macOS 14.0&lt;/li&gt;
+&lt;li&gt;终端：iTerm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;安装 nvm&lt;/h2&gt;
+&lt;p&gt;要获取或更新 nvm，手动执行以下命令：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;确定 Mac 使用的是 zsh 还是 bash，如果是 bash 则添加到 &lt;code&gt;~/.bash_profile&lt;/code&gt;，如果是 zsh 则添加到 &lt;code&gt;~/.zshrc&lt;/code&gt;：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;echo $SHELL
+# 输出 /bin/zsh，为 Zsh，添加到 ~/.zshrc
+# 输出 /bin/bash，为 Bash，添加到 ~/.bash_profile
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;尝试将一下命令添加到你的配置文件中（&lt;code&gt;~/.bash_profile&lt;/code&gt;、&lt;code&gt;~/.zshrc&lt;/code&gt;或&lt;code&gt;~/.bashrc&lt;/code&gt;）：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;export NVM_DIR=&quot;$HOME/.nvm&quot;
+[ -s &quot;$NVM_DIR/nvm.sh&quot; ] &amp;amp;&amp;amp; \. &quot;$NVM_DIR/nvm.sh&quot;  # This loads nvm
+[ -s &quot;$NVM_DIR/bash_completion&quot; ] &amp;amp;&amp;amp; \. &quot;$NVM_DIR/bash_completion&quot;  # This loads nvm bash_completion
+
+export NVM_NODEJS_ORG_MIRROR=https://npmmirror.com/mirrors/node/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;重新加载配置：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;source ~/.zshrc
+# 或
+source ~/.bash_profile
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;检查 nvm 是否安装成功：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;nvm --version
+
+# 输出 0.40.1，安装成功🎉
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;安装 node&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;nvm install 22.7.0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;检查 node 是否安装成功：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;node -v
+
+# 输出 v22.7.0，安装成功🎉
+&lt;/code&gt;&lt;/pre&gt;
+</content:encoded><category>环境</category><author>Typography</author></item><item><title>Tutorial: Create an Astro Component</title><link>https://lukakabot.github.io/posts/create-astro-component/</link><guid isPermaLink="true">https://lukakabot.github.io/posts/create-astro-component/</guid><description>Learn how to create your first Astro component.</description><pubDate>Sat, 02 Jul 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;If you know HTML, you already know enough to write your first Astro component.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Astro component syntax is a superset of HTML. The syntax was &lt;a href=&quot;#differences-between-astro-and-jsx&quot;&gt;designed to feel familiar to anyone with experience writing HTML or JSX&lt;/a&gt;, and adds support for including components and JavaScript expressions.&lt;/p&gt;
 &lt;h2&gt;JSX-like Expressions&lt;/h2&gt;
 &lt;p&gt;You can define local JavaScript variables inside of the frontmatter component script between the two code fences (&lt;code&gt;---&lt;/code&gt;) of an Astro component. You can then inject these variables into the component&apos;s HTML template using JSX-like expressions!&lt;/p&gt;
