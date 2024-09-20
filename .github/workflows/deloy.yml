@@ -1,4 +1,4 @@
-name: Pages CI
+name: Astro CI
 
 on:
   push:
@@ -22,9 +22,5 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Deploy to GitHub Pages repo
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: .
-          branch: main
-          token: ${{ secrets.LUKAKASITE_BOT_TOKEN }}
+      - name: Deploy
+        uses: actions/deploy-pages@v4
